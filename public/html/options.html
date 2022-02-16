@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PassApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="text-size-big bold header">Options</div>
+        <!-- Navigation Menu -->
+        <button class="nav-button" onclick="main:openNav()"></button>
+        <div class="nav-bar text-size-normal bold">
+            <a class="color-text-alt" href="#" onclick="main:closeNav()">&#x2715</a>
+            <p class="color-text-alt">&#x268a;</p>
+            <a class="color-text-alt" href="passwords.html">Passwords</a>
+            <a class="color-text-alt" href="newItem.html">New Item</a>
+            <a class="color-text-alt" href="edit.html">Edit</a>
+            <p class="color-text-alt">&#x268a;</p>
+            <a class="color-text-alt" onclick="main:logoutSession()">Log Out</a>
+        </div>
+        <!-- Options Form -->
+        <div class="form">
+            <div>
+                <h2>Old Password:</h2>
+                <input class="text-size-small color-text inputArea" id="old-password" type="text">
+            </div>
+            <div>
+                <h2>New Password:</h2>
+                <input class="text-size-small color-text inputArea" id="new-password" type="text">
+            </div>
+            <button class="buttonStyle color-text-alt bold">Change Password</button>
+        </div>
+        <div class="form">
+            <div>
+                <h2>Password:</h2>
+                <input class="text-size-small color-text inputArea" id="password" type="text">
+            </div>
+            <button class="buttonStyle color-text-alt bold">Delete All Passwords</button>
+        </div>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

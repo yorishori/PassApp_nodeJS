@@ -1,0 +1,185 @@
+/*****  Reset  ******/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: transparent;
+}
+body {
+  line-height: 1;
+  font-size: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+
+/*****  Texts & Color & Input & Button  ******/
+.text-size-big {
+  font-size: 6vmin;
+}
+.text-size-normal {
+  font-size: 3vmin;
+}
+.text-size-small {
+  font-size: 2.5vmin;
+}
+.bold {
+  font-weight: 900;
+}
+.color-text-alt {
+  color: white;
+}
+
+.inputArea {
+  padding: 0 0.5em;
+  text-align: left;
+  width: 20vmin;
+  border-bottom: 0.2em solid darkgray;
+}
+.inputArea:focus {
+  border-bottom: 0.2em solid blue;
+}
+
+.buttonStyle {
+  background-color: darkgray;
+  border-radius: 10px;
+  transition: ease-in-out 0.2s;
+  padding: 1em;
+  margin: 0.2em;
+}
+.buttonStyle:hover {
+  background-color: blue;
+}
+
+/*****  Header  ******/
+.header {
+  border-bottom: 0.1em solid black;
+  margin: 0.5em 30vw 1em 30vw;
+  padding: 0.2em 0;
+}
+
+/*****  Navigation Bar  ******/
+.nav-button {
+  background: transparent url(../img/nav-icon.png) no-repeat local;
+  background-size: cover;
+  position: fixed;
+  height: 5.5vmin;
+  width: 5.5vmin;
+  left: 5vw;
+  top: 5vh;
+  transition: ease-in-out 0.5s;
+  font-size: 100%;
+  z-index: 1;
+}
+.nav-button:hover {
+  background-image: url(../img/nav-iconAlt.png);
+}
+
+.nav-bar {
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-right: 1vw solid darkgray;
+  background-color: darkgray;
+  overflow-x: hidden;
+  padding-top: 10vh;
+  transition: 0.2s;
+}
+.nav-bar a {
+  display: block;
+  margin: 0.5em 0;
+}
+.nav-bar a:hover {
+  color: black;
+}
+
+/*****  Search Bar  ******/
+.search-bar {
+  position: fixed;
+  right: 5vw;
+  top: 5vh;
+  z-index: 1;
+}
+.search-bar input {
+  display: none;
+}
+.search-bar div {
+  background: transparent url(../img/search-icon.png) no-repeat local;
+  background-size: cover;
+  height: 4vmin;
+  transition: ease-in-out 0.2s;
+  width: 4vmin;
+}
+.search-bar div:hover {
+  background-image: url(../img/search-iconAlt.png);
+}
+
+/*****  Password List  ******/
+.password {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+.password li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.password-header {
+  padding: 0.1em 0;
+  margin: 0.5em 0;
+}
+.password-header div {
+  width: 20%;
+  border-bottom: 0.1em solid grey;
+}
+
+.password-row {
+  padding: 0.2em 0;
+  margin: 0.3em 0;
+}
+.password-row:hover {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+.password-row div {
+  width: 20%;
+}
+
+/*****  Forms  ******/
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  margin: 10vh auto;
+  padding: 5vh 5vw;
+  border: 0.5vmin solid darkgrey;
+  border-radius: 10px;
+  width: 70%;
+}
+.form:hover {
+  border-color: blue;
+}
+.form div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 70%;
+  padding: 0.1em 0;
+  margin: 0.5em 0;
+}
